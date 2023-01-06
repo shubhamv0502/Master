@@ -1,3 +1,4 @@
 steps:
-  entrypoint: 'bash'
-  args: ['./myScript.bash']
+- name: bash
+  script: |
+    echo "Hello World"
