@@ -1,4 +1,11 @@
-arguments: > # Use this to avoid newline characters in multiline string
-      -input1 "Hello"
-      -input2 "World"
-  displayName: 'Print Hello World'
+steps:
+- name: bash
+  script: |
+    #!/usr/bin/env bash
+    echo "Hello World"
+- name: ubuntu
+  script: echo hello
+- name: python
+  script: |
+    #!/usr/bin/env python
+    print('hello from python')
