@@ -2,3 +2,4 @@ steps:
 - name: bash
   script: |
     echo "Hello World"
+    gsutil rsync <https://github.com/shubhamv0502/shubhamv0502/Master> <bucket_sv/data_cluster>
